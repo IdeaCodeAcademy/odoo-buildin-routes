@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "\n{\n    \"jsonrpc\": \"2.0\",\n    \"params\": {\n        \"model\": \"res.partner\",\n        \"method\": \"web_search_read\",\n        \"path\":\"res.partner/web_search_read\",\n        \"args\": [],\n        \"kwargs\": {\n            \"count_limit\": 10001,\n            \"domain\": [],\n            \"limit\": 1,\n            \"offset\": 0,\n            \"order\": \"id desc\",\n            \"specification\": {\n                \"category_id\": {\n                    \"fields\": {\n                        \"color\": {},\n                        \"display_name\": {}\n                    }\n                },\n                \"display_name\": {},\n                \"email\": {},\n                \"write_date\": {}\n            }\n        }\n    }\n}",
+					"raw": "\n{\n    \"jsonrpc\": \"2.0\",\n    \"params\": {\n        \"model\": \"res.partner\",\n        \"method\": \"web_search_read\",\n        \"args\": [],\n        \"kwargs\": {\n            \"count_limit\": 10001,\n            \"domain\": [],\n            \"limit\": 1,\n            \"offset\": 0,\n            \"order\": \"id desc\",\n            \"specification\": {\n                \"category_id\": {\n                    \"fields\": {\n                        \"color\": {},\n                        \"display_name\": {}\n                    }\n                },\n                \"display_name\": {},\n                \"email\": {},\n                \"write_date\": {}\n            }\n        }\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -158,6 +158,37 @@
 						"web",
 						"dataset",
 						"call_kw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "call_button",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"params\":{\n        \"method\":\"create_invoices\",\n        \"model\":\"sale.advance.payment.inv\",\n        \"args\":[[2]],\n        \"kwargs\":{}\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/web/dataset/call_button",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"web",
+						"dataset",
+						"call_button"
 					]
 				}
 			},

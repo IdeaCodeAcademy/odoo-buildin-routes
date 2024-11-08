@@ -1,10 +1,11 @@
-# odoo Buildin Routes
+# Odoo Buildin Routes
 
 odoo မှာ external platform တွေနဲ့ integration လုပ်လိုတဲ့အခါမှာ ကိုယ်တိုင် custom route တွေကိုရေးခြင်းကို လျှော့ချပြီး 
 အသုံးပြုနိုင်တဲ့ odoo ရဲ့ buildin routes တွေအကြောင်း sharing လုပ်ပေးလိုပါတယ်။ 
 
-api ဆိုတော့ ပုံမှန် crud တွေ ဖြစ်တဲ့ list, details, create,update,unlink စသဖြင့် ပါ၀င်ရမှာ ဖြစ်ပါတယ်။
+အားသာချက်အနေဖြင့် authentication, authorization တွေကို odoo အတိုင်း အသုံးပြုနိုင်သွားတာအပြင် graphql လိုမျိုး မိမိလိုတဲ့ fields တစ်ခုချင်းစီကို တောင်းယူနိုင်မှာ ဖြစ်ပါတယ်။ 
 
+api ဆိုတော့ ပုံမှန် crud တွေ ဖြစ်တဲ့ list, details, create,update,unlink စသဖြင့် ပါ၀င်မှာ ဖြစ်ပြီး 
 ဒီ article အတွက် odoo version 18.0 ကို အသုံးပြုထားပြီး api knowledge အခြေခံရှိရမှာဖြစ်ပါတယ်။
 
 postman, httpclient, thunder client တို့လို api client အတွက် tools တွေကို အသုံးပြုပြီး စမ်းသပ်နိုင်ပါတယ်။
