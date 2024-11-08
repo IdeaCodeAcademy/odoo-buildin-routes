@@ -9,7 +9,7 @@ api ဆိုတော့ ပုံမှန် crud တွေ ဖြစ်တ�
 
 postman, httpclient, thunder client တို့လို api client အတွက် tools တွေကို အသုံးပြုပြီး စမ်းသပ်နိုင်ပါတယ်။
 
-လိုအပ်လျှင် postman collection ကို [Odoo Build In Routes.postman_collection.json](Odoo%20Build%20In%20Routes.postman_collection.json) ဒီနေတွင် ရယူနိုင်ပါသည်။
+လိုအပ်လျှင် postman collection ကို [Odoo Build In Routes.postman_collection.json](Odoo%20Build%20In%20Routes.postman_collection.json) ဒီနေရာတွင် ရယူနိုင်ပါသည်။
 
 - [login route](#login-routes)
 - [web_save](#web_save--create-write-)
