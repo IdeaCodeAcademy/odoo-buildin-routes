@@ -175,3 +175,18 @@ list ကို တောင်းယူလိုလျှင် `web_search_read
     }
 }
 ```
+
+### call_button ( execute method)
+model ထဲမှ method တွေကို execute ပြုလုပ်လိုလျှင် `call_button` ကို အသုံးပြုနိုင်ပါသည်။
+```json
+// {{host}}/web/dataset/call_button
+{
+    "jsonrpc":"2.0",
+    "params":{
+        "method":"create_invoices",
+        "model":"sale.advance.payment.inv",
+        "args":[[2], {"advance_payment_method": "delivered", "amount": 100}],
+        "kwargs":{}
+    }
+}
+```
