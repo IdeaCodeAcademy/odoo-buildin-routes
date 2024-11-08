@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "7686d554-ee9f-4f43-97b7-22af210679a0",
+		"name": "Odoo Build In Routes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20601977"
+	},
+	"item": [
+		{
+			"name": "web_search_read ( list )",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"jsonrpc\": \"2.0\",\n    \"params\": {\n        \"model\": \"res.partner\",\n        \"method\": \"web_search_read\",\n        \"path\":\"res.partner/web_search_read\",\n        \"args\": [],\n        \"kwargs\": {\n            \"count_limit\": 10001,\n            \"domain\": [],\n            \"limit\": 1,\n            \"offset\": 0,\n            \"order\": \"id desc\",\n            \"specification\": {\n                \"category_id\": {\n                    \"fields\": {\n                        \"color\": {},\n                        \"display_name\": {}\n                    }\n                },\n                \"display_name\": {},\n                \"email\": {},\n                \"write_date\": {}\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/web/dataset/call_kw",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"web",
+						"dataset",
+						"call_kw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unlink (delete)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"params\": {\n        \"model\": \"res.partner\",\n        \"method\": \"unlink\",\n        \"args\": [[27]],\n        \"kwargs\": {}\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/web/dataset/call_kw",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"web",
+						"dataset",
+						"call_kw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"params\": {\n        \"login\": \"admin\",\n        \"password\": \"admin\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "web_read (details)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"jsonrpc\": \"2.0\",\n    \"params\": {\n        \"model\": \"res.partner\",\n        \"method\": \"web_read\",\n        \"args\": [[46]],\n        \"kwargs\": {\n            \"specification\": {\n                \"bank_ids\": {\n                    \"fields\": {\n                        \"acc_holder_name\": {},\n                        \"acc_number\": {},\n                        \"allow_out_payment\": {},\n                        \"bank_id\": {\n                            \"fields\": {\n                                \"display_name\": {}\n                            }\n                        },\n                        \"sequence\": {}\n                    },\n                    \"limit\": 40,\n                    \"order\": \"sequence ASC, id ASC\"\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/web/dataset/call_kw",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"web",
+						"dataset",
+						"call_kw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "web_save ( create,write)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"jsonrpc\": \"2.0\",\n    \"params\": {\n        \"model\": \"res.partner\",\n        \"method\": \"web_save\",\n        // create\n         \"args\": [[],{\"name\": \"Sample 100\"}],\n        //  write\n        // \"args\": [[62], {\"name\": \"Sample 100\"}],\n        \"kwargs\": {\n            \"specification\": {\n                \"active\": {},\n                \"category_id\": {\n                    \"fields\": {\n                        \"color\": {},\n                        \"display_name\": {}\n                    }\n                },\n                \"write_date\": {}\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/web/dataset/call_kw",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"web",
+						"dataset",
+						"call_kw"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
