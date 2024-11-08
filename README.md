@@ -15,7 +15,7 @@ postman, httpclient, thunder client တို့လို api client အတွ�
 - [web_save](#web_save--create-write-)
 - [web_read](#web_read-details)
 - [web_search_read](#web_search_read-list)
-- [call_button](#)
+- [call_button](#call_button--execute-method)
 
 ### login routes
 ```python
