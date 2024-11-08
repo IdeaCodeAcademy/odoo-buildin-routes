@@ -11,6 +11,12 @@ postman, httpclient, thunder client တို့လို api client အတွ�
 
 လိုအပ်လျှင် postman collection ကို [Odoo Build In Routes.postman_collection.json](Odoo%20Build%20In%20Routes.postman_collection.json) ဒီနေတွင် ရယူနိုင်ပါသည်။
 
+- [login route](#login-routes)
+- [web_save](#web_save--create-write-)
+- [web_read](#web_read-details)
+- [web_search_read](#web_search_read-list)
+- [call_button](#)
+
 ### login routes
 ```python
 from odoo import http
